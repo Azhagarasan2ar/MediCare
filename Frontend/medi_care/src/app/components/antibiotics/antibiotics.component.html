@@ -1,0 +1,22 @@
+
+  <p class="h4 mt-4 mb-0 ms-3">Antibiotics</p>
+  <div class="container-fluid">
+    
+    <div class="container mt-4 ps-4 pe-0">
+      
+      <div class="row g-5">
+        <div class="d-flex flex-wrap ms-2">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-3 card text-center me-2 mb-2" *ngFor="let product of antibioticsProductList" style="width: 215px; height: 260px;">
+            
+            <img src={{product.imgSrc}} class="card-img-top w-100" alt="..." style="height:7rem;">
+
+            <div class="card-body">
+              <h5 class="card-title">{{product.productName}}</h5>
+              <p class="card-text"> <b>Price:</b>{{product.productPrice}}</p>
+              <button type="button" class="btn btn-success px-3" >Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
